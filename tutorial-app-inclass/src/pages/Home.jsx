@@ -14,20 +14,16 @@ const url = " https://tutorials-api-cw.herokuapp.com/api/tutorials";
     console.log(data);
     setTutorials(data)
   };
-
+  //? didmount
   useEffect(() => {
     getTutorials()
   
   }, [])
-  
-  
- 
-
 
   return (
     <>
       <AddTutorial/>
-      <TutorialList/>
+      <TutorialList {... tutorials}/>
     </>
   );
 };
