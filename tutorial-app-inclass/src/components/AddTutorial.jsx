@@ -2,9 +2,11 @@ import { useState } from "react";
 
 const AddTutorial = () => {
   const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [description, setDescription] = useState("");
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    const newTutor = {title, description};
+  };
   
   return (
     <div className="container text-center mt-4">
@@ -33,8 +35,8 @@ const AddTutorial = () => {
             className="form-control"
             id="desc"
             placeholder="Enter your Description"
-            value={desc}
-            onChange={(e) => setDesc(e.target.value)}
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
             required
           />
         </div>
