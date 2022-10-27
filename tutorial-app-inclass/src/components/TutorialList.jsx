@@ -57,7 +57,6 @@ const TutorialList = () => {
           })}
         </tbody>
       </table>
-
     </div>
   );
 };
