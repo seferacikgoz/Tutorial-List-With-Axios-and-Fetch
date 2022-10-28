@@ -28,7 +28,7 @@ const url = "https://tutorials-api-cw.herokuapp.com/api/tutorials";
   return (
     <>
       <AddTutorial getTutorials={getTutorials}/>
-      <TutorialList tutorials={tutorials}/>
+      <TutorialList tutorials={tutorials} getTutorials={getTutorials}/>
     </>
   );
 };
